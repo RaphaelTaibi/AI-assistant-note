@@ -97,6 +97,7 @@
 
 ## Description of Directory Structure:
 app/:
+
     api/: This directory contains API routes for different functionalities of the application.
         chatgpt/route.ts: API route for integrating ChatGPT functionality.
         notes/route.ts: API route for handling note-related operations.
@@ -124,6 +125,7 @@ app/:
     page.tsx: Homepage of the application.
 
 components/:
+
     Calendar/: Components related to the calendar feature.
         Calendar.tsx: Main calendar component.
         CalendarEvent.tsx: Component for rendering individual calendar events.

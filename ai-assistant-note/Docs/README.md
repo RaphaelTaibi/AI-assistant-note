@@ -2,13 +2,19 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Technologies Used
 
--[Next.js](https://nextjs.org/docs) React framework for web application
--[React](https://reactjs.org/) Javascript library for building user interfaces
--[Tailwind-CSS](https://tailwindcss.com/docs) Utility-first CSS framework for UI design
--[Prisma](https://www.prisma.io/docs/) ORM (Object-Relational-Mapping) for the database
--[PostgreSQL](https://www.postgresql.org/docs/) Relationnal database anagement system
--[AI-ChatGPT](https://openai.com/gpt) Artificial Intelligence for text generation 
--[AI-Whisper](https://openai.com/index/whisper/) Speech-to-text conversion service
+-[Next.js](https://nextjs.org/docs) React framework for web application.
+
+-[React](https://reactjs.org/) Javascript library for building user interfaces.
+
+-[Tailwind-CSS](https://tailwindcss.com/docs) Utility-first CSS framework for UI design.
+
+-[Prisma](https://www.prisma.io/docs/) ORM (Object-Relational-Mapping) for the database.
+
+-[PostgreSQL](https://www.postgresql.org/docs/) Relationnal database anagement system.
+
+-[AI-ChatGPT](https://openai.com/gpt) Artificial Intelligence for text generation.
+
+-[AI-Whisper](https://openai.com/index/whisper/) Speech-to-text conversion service.
 
 ## Getting Started
 
