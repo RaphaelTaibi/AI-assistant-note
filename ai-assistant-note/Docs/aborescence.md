@@ -3,7 +3,7 @@
     This project is a note-taking application integrated with ChatGPT, allowing users to create simple notes or complex projects composed of multiple notes. The app also features a calendar to view notes by date and a review section for the latest notes. The tech stack includes React, Next.js, TypeScript, Prisma, PostgreSQL, Tailwind CSS, shadcnUI, and AI ChatGPT & Whisper.
 
 ## Directory Structure
-
+```
   src/
     ├── app/
     │   ├── api/
@@ -93,100 +93,103 @@
         ├── useNotes.ts
         ├── useProjects.ts
         └── index.ts
-
+```
 
 ## Description of Directory Structure:
-app/:
 
-    api/: This directory contains API routes for different functionalities of the application.
-        chatgpt/route.ts: API route for integrating ChatGPT functionality.
-        notes/route.ts: API route for handling note-related operations.
-        projects/route.ts: API route for managing projects.
-        whisper/route.ts: API route for integrating Whisper functionality.
-        route.ts: Main API route handler.
+src/:
 
-    calendar/: This directory contains pages and components related to the calendar feature.
-        page.tsx: Calendar page for viewing and interacting with events.
+    app/:
 
-    notes/: This directory contains pages and components related to note management.
-        create/page.tsx: Page for creating a new note.
-        [id]/page.tsx: Dynamic page for viewing a specific note identified by its ID.
+        api/: This directory contains API routes for different functionalities of the application.
+            chatgpt/route.ts: API route for integrating ChatGPT functionality.
+            notes/route.ts: API route for handling note-related operations.
+            projects/route.ts: API route for managing projects.
+            whisper/route.ts: API route for integrating Whisper functionality.
+            route.ts: Main API route handler.
 
-    projects/: This directory contains pages and components related to project management.
-        create/page.tsx: Page for creating a new project.
-        [id]/page.tsx: Dynamic page for viewing a specific project and its associated notes.
-            notes/create/page.tsx: Page for creating a new note within a specific project.
+        calendar/: This directory contains pages and components related to the calendar feature.
+            page.tsx: Calendar page for viewing and interacting with events.
 
-    dashboard/: This directory contains pages and components related to the dashboard feature.
-        page.tsx: Dashboard page of the application.
+        notes/: This directory contains pages and components related to note management.
+            create/page.tsx: Page for creating a new note.
+            [id]/page.tsx: Dynamic page for viewing a specific note identified by its ID.
 
-    layout.tsx: Main layout component defining the structure of the application.
+        projects/: This directory contains pages and components related to project management.
+            create/page.tsx: Page for creating a new project.
+            [id]/page.tsx: Dynamic page for viewing a specific project and its associated notes.
+                notes/create/page.tsx: Page for creating a new note within a specific project.
 
-    page.tsx: Homepage of the application.
+        dashboard/: This directory contains pages and components related to the dashboard feature.
+            page.tsx: Dashboard page of the application.
 
-components/:
+        layout.tsx: Main layout component defining the structure of the application.
 
-    Calendar/: Components related to the calendar feature.
-        Calendar.tsx: Main calendar component.
-        CalendarEvent.tsx: Component for rendering individual calendar events.
+        page.tsx: Homepage of the application.
 
-    ChatGPT/: Components for integrating ChatGPT functionality.
-        ChatGPTComponent.tsx: Main component for interacting with ChatGPT.
+    components/:
 
-    Whisper/: Components for integrating Whisper functionality.
-        WhisperComponent.tsx: Main component for interacting with Whisper.
+        Calendar/: Components related to the calendar feature.
+            Calendar.tsx: Main calendar component.
+            CalendarEvent.tsx: Component for rendering individual calendar events.
 
-    Note/: Components related to note management.
-        NoteForm.tsx: Form component for creating and editing notes.
-        NoteItem.tsx: Component for displaying an individual note.
+        ChatGPT/: Components for integrating ChatGPT functionality.
+            ChatGPTComponent.tsx: Main component for interacting with ChatGPT.
 
-    Project/: Components related to project management.
-        ProjectForm.tsx: Form component for creating and editing projects.
-        ProjectItem.tsx: Component for displaying an individual project.
+        Whisper/: Components for integrating Whisper functionality.
+            WhisperComponent.tsx: Main component for interacting with Whisper.
 
-    Layout/: Components defining the global layout of the application.
-        Footer.tsx: Footer component.
-        Header.tsx: Header component.
+        Note/: Components related to note management.
+            NoteForm.tsx: Form component for creating and editing notes.
+            NoteItem.tsx: Component for displaying an individual note.
 
-    UI/: Reusable UI components.
-        Button.tsx: Component for rendering buttons.
-        Modal.tsx: Component for displaying modal dialogs.
+        Project/: Components related to project management.
+            ProjectForm.tsx: Form component for creating and editing projects.
+            ProjectItem.tsx: Component for displaying an individual project.
 
-prisma/:
-    schema.prisma: Prisma database schema definition.
-    client.ts: Configuration file for the Prisma client.
+        Layout/: Components defining the global layout of the application.
+            Footer.tsx: Footer component.
+            Header.tsx: Header component.
 
-services/:
-    chatgpt.ts: Service module for interacting with the ChatGPT API.
-    notes.ts: Service module for handling note-related operations.
-    projects.ts: Service module for managing projects.
-    whisper.ts: Service module for interacting with the Whisper API.
-    index.ts: Entry point for service modules.
+        UI/: Reusable UI components.
+            Button.tsx: Component for rendering buttons.
+            Modal.tsx: Component for displaying modal dialogs.
 
-styles/:
-    globals.css: Global CSS styles applicable throughout the application.
-    tailwind.css: Configuration file for TailwindCSS.
-    shadcn.css: Custom styles specific to the ShadcnUI framework.
+    prisma/:
+        schema.prisma: Prisma database schema definition.
+        client.ts: Configuration file for the Prisma client.
 
-types/:
-    chatgpt.ts: TypeScript types/interfaces related to ChatGPT integration.
-    note.ts: TypeScript types/interfaces related to notes.
-    project.ts: TypeScript types/interfaces related to projects.
-    index.ts: Entry point for type definitions.
+    services/:
+        chatgpt.ts: Service module for interacting with the ChatGPT API.
+        notes.ts: Service module for handling note-related operations.
+        projects.ts: Service module for managing projects.
+        whisper.ts: Service module for interacting with the Whisper API.
+        index.ts: Entry point for service modules.
 
-utils/:
-    api.ts: Utility functions for configuring and making API calls.
-    constants.ts: Constants used throughout the application.
-    helpers.ts: Helper functions for common tasks.
-    index.ts: Entry point for utility functions.
+    styles/:
+        globals.css: Global CSS styles applicable throughout the application.
+        tailwind.css: Configuration file for TailwindCSS.
+        shadcn.css: Custom styles specific to the ShadcnUI framework.
 
-hooks/:
-    useFetch.ts: Custom React hook for handling data fetching logic.
-    useChatGPT.ts: Custom React hook for interacting with ChatGPT functionality.
-    useWhisper.ts: Custom React hook for interacting with Whisper functionality.
-    useNotes.ts: Custom React hook for managing note-related state and logic.
-    useProjects.ts: Custom React hook for managing project-related state and logic.
-    index.ts: Entry point for custom hooks.
+    types/:
+        chatgpt.ts: TypeScript types/interfaces related to ChatGPT integration.
+        note.ts: TypeScript types/interfaces related to notes.
+        project.ts: TypeScript types/interfaces related to projects.
+        index.ts: Entry point for type definitions.
+
+    utils/:
+        api.ts: Utility functions for configuring and making API calls.
+        constants.ts: Constants used throughout the application.
+        helpers.ts: Helper functions for common tasks.
+        index.ts: Entry point for utility functions.
+
+    hooks/:
+        useFetch.ts: Custom React hook for handling data fetching logic.
+        useChatGPT.ts: Custom React hook for interacting with ChatGPT functionality.
+        useWhisper.ts: Custom React hook for interacting with Whisper functionality.
+        useNotes.ts: Custom React hook for managing note-related state and logic.
+        useProjects.ts: Custom React hook for managing project-related state and logic.
+        index.ts: Entry point for custom hooks.
 
 
 
